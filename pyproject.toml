@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "template-repo"
+version = "0.0.1"
+description = "Simple template for ML experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Joseph Nagel", email = "JosephBNagel@gmail.com"}
+]
+keywords = ["template", "machine learning", "deep learning"]
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision",
+    "lightning",
+    "tensorboard"
+]
+
+[project.optional-dependencies]
+interactive = [
+    "matplotlib",
+    "notebook"
+]
+
+[project.urls]
+source = "https://github.com/joseph-nagel/template-repo"
+
