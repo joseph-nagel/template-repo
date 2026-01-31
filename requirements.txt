@@ -1,3 +1,7 @@
 numpy
+torch
+torchvision
+lightning
+tensorboard
 matplotlib
 notebook
